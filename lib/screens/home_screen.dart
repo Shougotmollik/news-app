@@ -6,6 +6,7 @@ import 'package:newsapp/services/data.dart';
 import 'package:newsapp/services/slider_data.dart';
 import 'package:newsapp/widgets/category_tile.dart';
 import 'package:newsapp/widgets/heading_widget.dart';
+import 'package:newsapp/widgets/news_card.dart';
 import 'package:newsapp/widgets/slider_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -40,19 +41,22 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: Column(
-        children: [
-          _buildCategorySection(),
-          HeadingWidget(
-            headingText: 'Breaking News!',
-            onTap: () {},
-          ),
-          _buildSliderSection(size),
-          HeadingWidget(
-            headingText: 'Trending News!',
-            onTap: () {},
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            _buildCategorySection(),
+            HeadingWidget(
+              headingText: 'Breaking News!',
+              onTap: () {},
+            ),
+            _buildSliderSection(size),
+            HeadingWidget(
+              headingText: 'Trending News!',
+              onTap: () {},
+            ),
+            NewsCard(),
+          ],
+        ),
       ),
     );
   }

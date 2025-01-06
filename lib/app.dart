@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newsapp/screens/home_screen.dart';
+import 'package:newsapp/screens/welcome_screen.dart';
 
 class NewsApp extends StatelessWidget {
   const NewsApp({super.key});
@@ -7,7 +7,7 @@ class NewsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
