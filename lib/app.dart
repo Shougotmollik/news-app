@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:orbitnews/screens/welcome_screen.dart';
 
-class NewsApp extends StatelessWidget {
-  const NewsApp({super.key});
+class OrbitNewsApp extends StatefulWidget {
+  const OrbitNewsApp({super.key});
 
   @override
+  State<OrbitNewsApp> createState() => _OrbitNewsAppState();
+}
+
+class _OrbitNewsAppState extends State<OrbitNewsApp> {
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(),
-    );
+    return MaterialApp(home: WelcomeScreen());
   }
 }

@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:newsapp/app.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:orbitnews/app.dart';
 
 void main() {
-  runApp(const NewsApp());
+  runApp(const OrbitNewsApp());
 }
